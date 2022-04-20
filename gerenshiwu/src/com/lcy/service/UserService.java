@@ -1,9 +1,9 @@
-package com.shequ.service;
+package com.lcy.service;
 
 import java.sql.SQLException;
 
-import com.shequ.dao.UserDao;
-import com.shequ.domain.User;
+import com.lcy.dao.UserDao;
+import com.lcy.domain.User;
 
 public class UserService {
 

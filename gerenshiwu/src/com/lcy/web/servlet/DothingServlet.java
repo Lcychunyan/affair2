@@ -1,4 +1,4 @@
-package com.shequ.web.servlet;
+package com.lcy.web.servlet;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -21,11 +21,9 @@ import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
 import org.apache.commons.dbutils.handlers.MapListHandler;
 
-import com.shequ.domain.Admin;
-import com.shequ.domain.Dothing;
-import com.shequ.domain.Question;
-import com.shequ.domain.User;
-import com.shequ.utils.DataSourceUtils;
+import com.lcy.domain.Dothing;
+import com.lcy.domain.User;
+import com.lcy.utils.DataSourceUtils;
 
 import net.sf.json.JSONObject;
 

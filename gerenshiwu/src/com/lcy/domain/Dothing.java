@@ -1,14 +1,13 @@
-package com.shequ.domain;
+package com.lcy.domain;
 
-public class Image {
+public class Dothing {
 	
 	private int id;
 	private int user_id;
 	private String title;
 	private String description;
-	private String site;
-	private String img;
-	private String addtime;
+	private String dotime;
+	private int status;
 	
 	public int getId() {
 		return id;
@@ -34,24 +33,19 @@ public class Image {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public String getSite() {
-		return site;
+	public String getDotime() {
+		return dotime;
 	}
-	public void setSite(String site) {
-		this.site = site;
+	public void setDotime(String dotime) {
+		this.dotime = dotime;
 	}
-	public String getImg() {
-		return img;
+	public int getStatus() {
+		return status;
 	}
-	public void setImg(String img) {
-		this.img = img;
+	public void setStatus(int status) {
+		this.status = status;
 	}
-	public String getAddtime() {
-		return addtime;
-	}
-	public void setAddtime(String addtime) {
-		this.addtime = addtime;
-	}
+	
 	
 	
 }

@@ -1,4 +1,4 @@
-package com.shequ.dao;
+package com.lcy.dao;
 
 import java.sql.SQLException;
 
@@ -9,8 +9,8 @@ import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.ScalarHandler;
 import org.apache.taglibs.standard.tag.common.sql.DataSourceUtil;
 
-import com.shequ.domain.User;
-import com.shequ.utils.DataSourceUtils;
+import com.lcy.domain.User;
+import com.lcy.utils.DataSourceUtils;
 
 public class UserDao {
 

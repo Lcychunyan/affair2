@@ -1,4 +1,4 @@
-package com.shequ.web.servlet;
+package com.lcy.web.servlet;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -31,10 +31,10 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 
-import com.shequ.domain.Book;
-import com.shequ.domain.Image;
-import com.shequ.domain.User;
-import com.shequ.utils.DataSourceUtils;
+import com.lcy.domain.Book;
+import com.lcy.domain.Image;
+import com.lcy.domain.User;
+import com.lcy.utils.DataSourceUtils;
 
 //用户编辑个人相册
 public class EditImage extends HttpServlet {

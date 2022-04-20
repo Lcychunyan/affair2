@@ -1,11 +1,10 @@
-package com.shequ.web.servlet;
+package com.lcy.web.servlet;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.lang.reflect.InvocationTargetException;
-import java.net.URLEncoder;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -19,29 +18,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.BeanHandler;
-import org.apache.commons.dbutils.handlers.BeanListHandler;
-import org.apache.commons.dbutils.handlers.MapListHandler;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 
-import com.shequ.domain.Book;
-import com.shequ.domain.Image;
-import com.shequ.domain.User;
-import com.shequ.utils.DataSourceUtils;
+import com.lcy.domain.Book;
+import com.lcy.domain.User;
+import com.lcy.utils.DataSourceUtils;
 
-//用户上传个人相册
-public class AddImage extends HttpServlet {
+//用户添加联系人信息
+public class AddBook extends HttpServlet {
 	
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
-		Image image= new Image();
+		Book book= new Book();
 		//获取到的数据封装进实体中
 		Map<String,Object> map = new HashMap<String,Object>();
 		try {
@@ -79,7 +72,7 @@ public class AddImage extends HttpServlet {
 					map.put("img", "upload/"+fileName);
 				}
 			}
-				BeanUtils.populate(image, map);
+				BeanUtils.populate(book, map);
 				SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 				String addtime = format.format(new Date());
 				
@@ -88,10 +81,10 @@ public class AddImage extends HttpServlet {
 				User user = (User)session.getAttribute("user");
 				
 				QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
-				String sql = "insert into images(user_id,title,description,site,img,addtime) values(?,?,?,?,?,?)";
-				runner.update(sql,user.getId(),image.getTitle(),image.getDescription(),image.getSite(),image.getImg(),addtime);
-				response.sendRedirect(request.getContextPath()+"/image?method=getAdminList");
-	
+				String sql = "insert into books(user_id,name,relation,phone,email,address,img,addtime) values(?,?,?,?,?,?,?,?)";
+				runner.update(sql,user.getId(),book.getName(),book.getRelation(),book.getPhone(),book.getEmail(),book.getAddress(),book.getImg(),addtime);
+				response.sendRedirect(request.getContextPath()+"/book?method=getAdminList");
+
 			} catch (FileUploadException | IllegalAccessException | InvocationTargetException e) {
 				
 				e.printStackTrace();
@@ -99,10 +92,10 @@ public class AddImage extends HttpServlet {
 				
 				e.printStackTrace();
 			}
-}
+	}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
-
+	
 }

@@ -1,4 +1,4 @@
-package com.shequ.web.servlet;
+package com.lcy.web.servlet;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -15,9 +15,9 @@ import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.MapListHandler;
 
-import com.shequ.domain.Message;
-import com.shequ.domain.User;
-import com.shequ.utils.DataSourceUtils;
+import com.lcy.domain.Message;
+import com.lcy.domain.User;
+import com.lcy.utils.DataSourceUtils;
 
 
 public class ProfileServlet extends BaseServlet {

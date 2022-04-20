@@ -1,4 +1,4 @@
-package com.shequ.utils;
+package com.lcy.utils;
 
 import java.util.UUID;
 

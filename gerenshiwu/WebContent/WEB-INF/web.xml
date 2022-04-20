@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
-  <display-name>shequyiqing</display-name>
+  <display-name>affair</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -13,7 +13,7 @@
     <description></description>
     <display-name>TypeServlet</display-name>
     <servlet-name>TypeServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.TypeServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.TypeServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>TypeServlet</servlet-name>
@@ -23,7 +23,7 @@
     <description></description>
     <display-name>UploadGoodServlet</display-name>
     <servlet-name>UploadGoodServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.UploadGoodServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.UploadGoodServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UploadGoodServlet</servlet-name>
@@ -33,7 +33,7 @@
     <description></description>
     <display-name>GoodServlet</display-name>
     <servlet-name>GoodServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.GoodServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.GoodServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>GoodServlet</servlet-name>
@@ -43,7 +43,7 @@
     <description></description>
     <display-name>editGoodServlet</display-name>
     <servlet-name>editGoodServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.editGoodServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.editGoodServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>editGoodServlet</servlet-name>
@@ -53,7 +53,7 @@
     <description></description>
     <display-name>UserServlet</display-name>
     <servlet-name>UserServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.UserServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.UserServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UserServlet</servlet-name>
@@ -63,7 +63,7 @@
     <description></description>
     <display-name>StaffServlet</display-name>
     <servlet-name>StaffServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.StaffServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.StaffServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>StaffServlet</servlet-name>
@@ -73,7 +73,7 @@
     <description></description>
     <display-name>StockServlet</display-name>
     <servlet-name>StockServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.StockServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.StockServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>StockServlet</servlet-name>
@@ -83,7 +83,7 @@
     <description></description>
     <display-name>UploadImgServlet</display-name>
     <servlet-name>UploadImgServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.UploadImgServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.UploadImgServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UploadImgServlet</servlet-name>
@@ -93,7 +93,7 @@
     <description></description>
     <display-name>StarServlet</display-name>
     <servlet-name>StarServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.StarServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.StarServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>StarServlet</servlet-name>
@@ -103,7 +103,7 @@
     <description></description>
     <display-name>UploadStarServlet</display-name>
     <servlet-name>UploadStarServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.UploadStarServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.UploadStarServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UploadStarServlet</servlet-name>
@@ -113,7 +113,7 @@
     <description></description>
     <display-name>updateStarServlet</display-name>
     <servlet-name>updateStarServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.updateStarServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.updateStarServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>updateStarServlet</servlet-name>
@@ -123,7 +123,7 @@
     <description></description>
     <display-name>Job</display-name>
     <servlet-name>Job</servlet-name>
-    <servlet-class>com.shequ.domain.Job</servlet-class>
+    <servlet-class>com.lcy.domain.Job</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Job</servlet-name>
@@ -133,7 +133,7 @@
     <description></description>
     <display-name>Department</display-name>
     <servlet-name>Department</servlet-name>
-    <servlet-class>com.shequ.web.servlet.Department</servlet-class>
+    <servlet-class>com.lcy.web.servlet.Department</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Department</servlet-name>
@@ -143,7 +143,7 @@
     <description></description>
     <display-name>UploadUserServlet</display-name>
     <servlet-name>UploadUserServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.UploadUserServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.UploadUserServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UploadUserServlet</servlet-name>
@@ -153,7 +153,7 @@
     <description></description>
     <display-name>UpdateUserServlet</display-name>
     <servlet-name>UpdateUserServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.UpdateUserServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.UpdateUserServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UpdateUserServlet</servlet-name>
@@ -163,7 +163,7 @@
     <description></description>
     <display-name>WordServlet</display-name>
     <servlet-name>WordServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.WordServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.WordServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>WordServlet</servlet-name>
@@ -173,7 +173,7 @@
     <description></description>
     <display-name>UploadWordServlet</display-name>
     <servlet-name>UploadWordServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.UploadWordServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.UploadWordServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UploadWordServlet</servlet-name>
@@ -183,7 +183,7 @@
     <description></description>
     <display-name>UserUpdateServlet</display-name>
     <servlet-name>UserUpdateServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.UserUpdateServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.UserUpdateServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UserUpdateServlet</servlet-name>
@@ -193,7 +193,7 @@
     <description></description>
     <display-name>UploadManageUser</display-name>
     <servlet-name>UploadManageUser</servlet-name>
-    <servlet-class>com.shequ.web.servlet.UploadManageUser</servlet-class>
+    <servlet-class>com.lcy.web.servlet.UploadManageUser</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UploadManageUser</servlet-name>
@@ -203,7 +203,7 @@
     <description></description>
     <display-name>UpdateMangeUser</display-name>
     <servlet-name>UpdateMangeUser</servlet-name>
-    <servlet-class>com.shequ.web.servlet.UpdateMangeUser</servlet-class>
+    <servlet-class>com.lcy.web.servlet.UpdateMangeUser</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UpdateMangeUser</servlet-name>
@@ -213,7 +213,7 @@
     <description></description>
     <display-name>ClassroomServlet</display-name>
     <servlet-name>ClassroomServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.ClassroomServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.ClassroomServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ClassroomServlet</servlet-name>
@@ -223,7 +223,7 @@
     <description></description>
     <display-name>TeacherServlet</display-name>
     <servlet-name>TeacherServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.TeacherServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.TeacherServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>TeacherServlet</servlet-name>
@@ -233,7 +233,7 @@
     <description></description>
     <display-name>UploadExcelServlet</display-name>
     <servlet-name>UploadExcelServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.UploadExcelServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.UploadExcelServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UploadExcelServlet</servlet-name>
@@ -243,7 +243,7 @@
     <description></description>
     <display-name>ParkServlet</display-name>
     <servlet-name>ParkServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.ParkServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.ParkServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ParkServlet</servlet-name>
@@ -253,7 +253,7 @@
     <description></description>
     <display-name>AddParkServlet</display-name>
     <servlet-name>AddParkServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.AddParkServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.AddParkServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AddParkServlet</servlet-name>
@@ -263,7 +263,7 @@
     <description></description>
     <display-name>NewsServlet</display-name>
     <servlet-name>NewsServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.NewsServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.NewsServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>NewsServlet</servlet-name>
@@ -273,7 +273,7 @@
     <description></description>
     <display-name>AddNewsServlet</display-name>
     <servlet-name>AddNewsServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.AddNewsServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.AddNewsServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AddNewsServlet</servlet-name>
@@ -283,7 +283,7 @@
     <description></description>
     <display-name>PostServelt</display-name>
     <servlet-name>PostServelt</servlet-name>
-    <servlet-class>com.shequ.web.servlet.PostServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.PostServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>PostServelt</servlet-name>
@@ -293,7 +293,7 @@
     <description></description>
     <display-name>HomeServlet</display-name>
     <servlet-name>HomeServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.HomeServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.HomeServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>HomeServlet</servlet-name>
@@ -303,7 +303,7 @@
     <description></description>
     <display-name>ProfileServlet</display-name>
     <servlet-name>ProfileServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.ProfileServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.ProfileServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ProfileServlet</servlet-name>
@@ -313,7 +313,7 @@
     <description></description>
     <display-name>CommentServlet</display-name>
     <servlet-name>CommentServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.CommentServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.CommentServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>CommentServlet</servlet-name>
@@ -323,7 +323,7 @@
     <description></description>
     <display-name>AdminServlet</display-name>
     <servlet-name>AdminServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.AdminServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.AdminServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AdminServlet</servlet-name>
@@ -333,7 +333,7 @@
     <description></description>
     <display-name>LawyerServlet</display-name>
     <servlet-name>LawyerServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.LawyerServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.LawyerServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LawyerServlet</servlet-name>
@@ -343,7 +343,7 @@
     <description></description>
     <display-name>AddLawyerServlet</display-name>
     <servlet-name>AddLawyerServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.AddLawyerServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.AddLawyerServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AddLawyerServlet</servlet-name>
@@ -353,7 +353,7 @@
     <description></description>
     <display-name>UpdateLawyer</display-name>
     <servlet-name>UpdateLawyer</servlet-name>
-    <servlet-class>com.shequ.web.servlet.UpdateLawyer</servlet-class>
+    <servlet-class>com.lcy.web.servlet.UpdateLawyer</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UpdateLawyer</servlet-name>
@@ -363,7 +363,7 @@
     <description></description>
     <display-name>LawServlet</display-name>
     <servlet-name>LawServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.LawServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.LawServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LawServlet</servlet-name>
@@ -373,7 +373,7 @@
     <description></description>
     <display-name>DrugServlet</display-name>
     <servlet-name>DrugServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.DrugServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.DrugServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>DrugServlet</servlet-name>
@@ -383,7 +383,7 @@
     <description></description>
     <display-name>AddDrugServlet</display-name>
     <servlet-name>AddDrugServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.AddDrugServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.AddDrugServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AddDrugServlet</servlet-name>
@@ -393,7 +393,7 @@
     <description></description>
     <display-name>AboutServlet</display-name>
     <servlet-name>AboutServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.AboutServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.AboutServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AboutServlet</servlet-name>
@@ -403,7 +403,7 @@
     <description></description>
     <display-name>AddAdminServlet</display-name>
     <servlet-name>AddAdminServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.AddAdminServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.AddAdminServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AddAdminServlet</servlet-name>
@@ -413,7 +413,7 @@
     <description></description>
     <display-name>ApplyServlet</display-name>
     <servlet-name>ApplyServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.ApplyServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.ApplyServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ApplyServlet</servlet-name>
@@ -423,7 +423,7 @@
     <description></description>
     <display-name>ReportServlet</display-name>
     <servlet-name>ReportServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.ReportServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.ReportServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>ReportServlet</servlet-name>
@@ -433,7 +433,7 @@
     <description></description>
     <display-name>HealthServlet</display-name>
     <servlet-name>HealthServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.HealthServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.HealthServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>HealthServlet</servlet-name>
@@ -443,7 +443,7 @@
     <description></description>
     <display-name>QuestionServlet</display-name>
     <servlet-name>QuestionServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.QuestionServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.QuestionServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>QuestionServlet</servlet-name>
@@ -453,7 +453,7 @@
     <description></description>
     <display-name>DocServlet</display-name>
     <servlet-name>DocServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.DocServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.DocServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>DocServlet</servlet-name>
@@ -463,7 +463,7 @@
     <description></description>
     <display-name>FamilyServlet</display-name>
     <servlet-name>FamilyServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.FamilyServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.FamilyServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>FamilyServlet</servlet-name>
@@ -473,7 +473,7 @@
     <description></description>
     <display-name>HuifangServlet</display-name>
     <servlet-name>HuifangServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.HuifangServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.HuifangServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>HuifangServlet</servlet-name>
@@ -483,7 +483,7 @@
     <description></description>
     <display-name>ZhuizongServlet</display-name>
     <servlet-name>ZhuizongServlet</servlet-name>
-    <servlet-class>com.shequ.web.servlet.ZhuizongServlet</servlet-class>
+    <servlet-class>com.lcy.web.servlet.ZhuizongServlet</servlet-class>
   </servlet>
   
   
@@ -492,7 +492,7 @@
   	</description>
   	<display-name>RepirServlet</display-name>
   	<servlet-name>RepirServlet</servlet-name>
-  	<servlet-class>com.shequ.web.servlet.RepirServlet</servlet-class>
+  	<servlet-class>com.lcy.web.servlet.RepirServlet</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>RepirServlet</servlet-name>
@@ -505,63 +505,63 @@
   	</description>
   	<display-name>FeeServlet</display-name>
   	<servlet-name>FeeServlet</servlet-name>
-  	<servlet-class>com.shequ.web.servlet.FeeServlet</servlet-class>
+  	<servlet-class>com.lcy.web.servlet.FeeServlet</servlet-class>
   </servlet>
   <servlet>
   	<description>
   	</description>
   	<display-name>DothingServlet</display-name>
   	<servlet-name>DothingServlet</servlet-name>
-  	<servlet-class>com.shequ.web.servlet.DothingServlet</servlet-class>
+  	<servlet-class>com.lcy.web.servlet.DothingServlet</servlet-class>
   </servlet>
   <servlet>
   	<description>
   	</description>
   	<display-name>BookServlet</display-name>
   	<servlet-name>BookServlet</servlet-name>
-  	<servlet-class>com.shequ.web.servlet.BookServlet</servlet-class>
+  	<servlet-class>com.lcy.web.servlet.BookServlet</servlet-class>
   </servlet>
   <servlet>
   	<description>
   	</description>
   	<display-name>AddBook</display-name>
   	<servlet-name>AddBook</servlet-name>
-  	<servlet-class>com.shequ.web.servlet.AddBook</servlet-class>
+  	<servlet-class>com.lcy.web.servlet.AddBook</servlet-class>
   </servlet>
   <servlet>
   	<description>
   	</description>
   	<display-name>KeepServlet</display-name>
   	<servlet-name>KeepServlet</servlet-name>
-  	<servlet-class>com.shequ.web.servlet.KeepServlet</servlet-class>
+  	<servlet-class>com.lcy.web.servlet.KeepServlet</servlet-class>
   </servlet>
   <servlet>
   	<description>
   	</description>
   	<display-name>ImageServlet</display-name>
   	<servlet-name>ImageServlet</servlet-name>
-  	<servlet-class>com.shequ.web.servlet.ImageServlet</servlet-class>
+  	<servlet-class>com.lcy.web.servlet.ImageServlet</servlet-class>
   </servlet>
   <servlet>
   	<description>
   	</description>
   	<display-name>AddImage</display-name>
   	<servlet-name>AddImage</servlet-name>
-  	<servlet-class>com.shequ.web.servlet.AddImage</servlet-class>
+  	<servlet-class>com.lcy.web.servlet.AddImage</servlet-class>
   </servlet>
   <servlet>
   	<description>
   	</description>
   	<display-name>EditBook</display-name>
   	<servlet-name>EditBook</servlet-name>
-  	<servlet-class>com.shequ.web.servlet.EditBook</servlet-class>
+  	<servlet-class>com.lcy.web.servlet.EditBook</servlet-class>
   </servlet>
   <servlet>
   	<description>
   	</description>
   	<display-name>EditImage</display-name>
   	<servlet-name>EditImage</servlet-name>
-  	<servlet-class>com.shequ.web.servlet.EditImage</servlet-class>
+  	<servlet-class>com.lcy.web.servlet.EditImage</servlet-class>
   </servlet>
   <servlet-mapping>
   	<servlet-name>FeeServlet</servlet-name>

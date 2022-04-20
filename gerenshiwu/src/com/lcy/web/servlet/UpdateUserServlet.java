@@ -1,4 +1,4 @@
-package com.shequ.web.servlet;
+package com.lcy.web.servlet;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -21,25 +21,22 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.dbutils.QueryRunner;
-import org.apache.commons.dbutils.handlers.BeanHandler;
-import org.apache.commons.dbutils.handlers.BeanListHandler;
-import org.apache.commons.dbutils.handlers.MapListHandler;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 
-import com.shequ.domain.Admin;
-import com.shequ.domain.Book;
-import com.shequ.domain.User;
-import com.shequ.utils.DataSourceUtils;
+import com.lcy.domain.User;
+import com.lcy.utils.DataSourceUtils;
 
-//用户编辑联系人信息
-public class EditBook extends HttpServlet {
-	
+//更新个人信息信息的实现
+public class UpdateUserServlet extends HttpServlet {
+
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		Book book= new Book();
+		User user= new User();
+		HttpSession session = request.getSession();
+		User user1 = (User)session.getAttribute("user");
 		//获取到的数据封装进实体中
 		Map<String,Object> map = new HashMap<String,Object>();
 		try {
@@ -77,24 +74,20 @@ public class EditBook extends HttpServlet {
 					map.put("img", "upload/"+fileName);
 				}
 			}
-				BeanUtils.populate(book, map);
-				SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-				String addtime = format.format(new Date());
-				
-				//保存通讯录人员信息
-
+				BeanUtils.populate(user, map);
+				//修改个人信息
 				QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
 				boolean contains = map.containsKey("img");
 				if(contains){
-					String sql = "UPDATE books SET name=?,relation=?,phone=?,email=?,address=?,img=? WHERE id=?"; 
-					runner.update(sql,book.getName(),book.getRelation(),book.getPhone(),book.getEmail(),book.getAddress(),book.getImg(),book.getId());
-				}else {
-					String sql = "UPDATE books SET name=?,relation=?,phone=?,email=?,address=? WHERE id=?"; 
-					runner.update(sql,book.getName(),book.getRelation(),book.getPhone(),book.getEmail(),book.getAddress(),book.getId());
+					String sql = "update users set relname=?,phone=?,email=?,idcard=?,sex=?,address=?,img=?,qq=?,birth=?,wechat=? WHERE id=?";
+					runner.update(sql,user.getRelname(),user.getPhone(),user.getEmail(),user.getIdcard(),user.getSex(),user.getAddress(),user.getImg(),user.getQq(),user.getBirth(),user.getWechat(),user1.getId());
+				}else{
+					String sql = "update users set relname=?,phone=?,email=?,idcard=?,sex=?,address=?,qq=?,birth=?,wechat=? WHERE id=?";
+					runner.update(sql,user.getRelname(),user.getPhone(),user.getEmail(),user.getIdcard(),user.getSex(),user.getAddress(),user.getQq(),user.getBirth(),user.getWechat(),user1.getId());
 				}
+				String a = URLEncoder.encode("个人信息更新成功", "UTF-8");
+				response.getWriter().write("<script>alert(decodeURIComponent('"+a+"'));window.location.href='user?method=profile'</script>");
 				
-				response.sendRedirect(request.getContextPath()+"/book?method=getAdminList");
-
 			} catch (FileUploadException | IllegalAccessException | InvocationTargetException e) {
 				
 				e.printStackTrace();
@@ -107,5 +100,4 @@ public class EditBook extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
-	
 }

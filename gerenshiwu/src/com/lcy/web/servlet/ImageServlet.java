@@ -1,30 +1,21 @@
-package com.shequ.web.servlet;
+package com.lcy.web.servlet;
 
 import java.io.IOException;
-import java.lang.reflect.InvocationTargetException;
-import java.net.URLEncoder;
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
-import org.apache.commons.dbutils.handlers.MapListHandler;
 
-import com.shequ.domain.Image;
-import com.shequ.domain.Keep;
-import com.shequ.domain.User;
-import com.shequ.utils.DataSourceUtils;
+import com.lcy.domain.Image;
+import com.lcy.domain.User;
+import com.lcy.utils.DataSourceUtils;
 
 import net.sf.json.JSONObject;
 

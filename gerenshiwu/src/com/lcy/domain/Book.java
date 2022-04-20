@@ -1,4 +1,4 @@
-package com.shequ.domain;
+package com.lcy.domain;
 
 public class Book {
 	

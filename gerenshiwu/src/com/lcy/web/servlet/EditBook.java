@@ -1,4 +1,4 @@
-package com.shequ.web.servlet;
+package com.lcy.web.servlet;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -30,13 +30,13 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 
-import com.shequ.domain.Admin;
-import com.shequ.domain.Book;
-import com.shequ.domain.User;
-import com.shequ.utils.DataSourceUtils;
+import com.lcy.domain.Admin;
+import com.lcy.domain.Book;
+import com.lcy.domain.User;
+import com.lcy.utils.DataSourceUtils;
 
-//用户添加联系人信息
-public class AddBook extends HttpServlet {
+//用户编辑联系人信息
+public class EditBook extends HttpServlet {
 	
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		Book book= new Book();
@@ -82,12 +82,17 @@ public class AddBook extends HttpServlet {
 				String addtime = format.format(new Date());
 				
 				//保存通讯录人员信息
-				HttpSession session = request.getSession();
-				User user = (User)session.getAttribute("user");
-				
+
 				QueryRunner runner = new QueryRunner(DataSourceUtils.getDataSource());
-				String sql = "insert into books(user_id,name,relation,phone,email,address,img,addtime) values(?,?,?,?,?,?,?,?)";
-				runner.update(sql,user.getId(),book.getName(),book.getRelation(),book.getPhone(),book.getEmail(),book.getAddress(),book.getImg(),addtime);
+				boolean contains = map.containsKey("img");
+				if(contains){
+					String sql = "UPDATE books SET name=?,relation=?,phone=?,email=?,address=?,img=? WHERE id=?"; 
+					runner.update(sql,book.getName(),book.getRelation(),book.getPhone(),book.getEmail(),book.getAddress(),book.getImg(),book.getId());
+				}else {
+					String sql = "UPDATE books SET name=?,relation=?,phone=?,email=?,address=? WHERE id=?"; 
+					runner.update(sql,book.getName(),book.getRelation(),book.getPhone(),book.getEmail(),book.getAddress(),book.getId());
+				}
+				
 				response.sendRedirect(request.getContextPath()+"/book?method=getAdminList");
 
 			} catch (FileUploadException | IllegalAccessException | InvocationTargetException e) {
